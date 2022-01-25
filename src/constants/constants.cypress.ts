@@ -1,0 +1,8 @@
+export const COUNT_CONTRACT_ADDRESS_MAINNET =
+  '0x5e9ddcFCF07Bf4Af37623dc6C5877FcE5244973C';
+export const CHAIN_ID_MAINNET = '8217'; //babob test net 1001 main net 8217
+
+// const ACCESS_KEY_ID: string = 'KASKPIWZ8QHF1Z869HBWD7ON';
+// const SECRET_ACCESS_KEY: string = 'YwTX2ZekQJmgWNwuz2Rttb4QQXzn5S2gbg97iAg4';
+// export const AUTHORIZATION: string =
+//   'Basic S0FTS1BJV1o4UUhGMVo4NjlIQldEN09OOll3VFgyWmVrUUptZ1dOd3V6MlJ0dGI0UVFYem41UzJnYmc5N2lBZzQ=';
