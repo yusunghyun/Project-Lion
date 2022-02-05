@@ -2,18 +2,35 @@ import React, { useState } from 'react';
 import './App.css';
 import { Button } from '@mui/material';
 import QRCode from 'qrcode.react';
-import { getAddress, setCount } from './api/useKlip';
+import { useGetAddress, useSetCount } from './api/useKlip';
 
 const DEFAULT_QR_CODE = 'DEFAULT';
 
 const App = (): JSX.Element => {
+  //state data
+
+  //global data
+  //address
+  //nft
   const [balance, setBalance] = useState<string>('0');
+
+  //ui
   const [qrValue, setQrValue] = useState<string>(DEFAULT_QR_CODE);
+  const { getAddress } = useGetAddress(setQrValue);
+  const { setCount } = useSetCount(setQrValue);
+  //mintInput
+
+  //modal
+
+  //fetchMarketNFTs
+  //fetch
+  //getbalance(0xsfsdfdsfsdf????)
+
   const onClickGetAddress = () => {
-    getAddress(setQrValue);
+    getAddress();
   };
-  const onClickSetCount = async () => {
-    await setCount(2000, setQrValue);
+  const onClickSetCount = () => {
+    setCount(2000);
   };
 
   return (
